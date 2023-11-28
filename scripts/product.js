@@ -18,3 +18,22 @@ productDesc.textContent = product.description;
 const buyBtn = document.getElementById('buyBtn');
 buyBtn.setAttribute('id', product.id);
 buyBtn.textContent = 'Buy Now';
+buyBtn.addEventListener('click', addToCart)
+
+// add product to cart
+function addToCart() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const productObj = {
+        quantity: 1,
+        id: product.id,
+        productName: product.productName,
+        price: product.price,
+        imgUrl: product.imgUrl
+    };
+    
+    cart.push(productObj);
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    alert('Product added to cart');
+    window.location.href = '../index.html';
+}
