@@ -1,6 +1,5 @@
 // get product from localStorage
 const product = JSON.parse(localStorage.getItem('product'));
-console.log(product);
 
 const title = document.getElementById('productTitle');
 title.setAttribute('class', 'my-4');

@@ -6,6 +6,49 @@
     margin: 10px;
 }
 
+.cartCard {
+    border: 1px solid #ccc;
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.actionDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.actionDiv button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: orange;
+    cursor: pointer;
+    width: 80px;
+    font-size: 23px;
+    color: white;
+}
+
+.actionDiv p {
+    font-size: 23px;
+
+}
+
+.deleteBtn {
+    background-color: red;
+    color: white;
+    padding: 6px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 400px;
+    bottom: 900px;
+}
+
 @media screen and (max-width: 768px) {
     #grid {
         grid-template-columns: repeat(2, 1fr);
